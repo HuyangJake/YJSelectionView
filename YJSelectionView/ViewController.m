@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YJSelectionView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   
+}
+- (IBAction)tap:(id)sender {
+    [YJSelectionView showWithTitle:@"测试" options:@[@"第一行", @"第二行", @"第三"] singleSelection:YES delegate:self completionHandler:^(NSInteger index, NSArray *array) {
+        NSLog(@"%ld", index);
+        for (id obj in array) {
+            NSLog(@"%@", obj);
+        }
+    }];
 }
 
 

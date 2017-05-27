@@ -13,6 +13,10 @@
 		2377B9751ED6DF0C003A7A49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2377B9731ED6DF0C003A7A49 /* Main.storyboard */; };
 		2377B9771ED6DF0C003A7A49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2377B9761ED6DF0C003A7A49 /* Assets.xcassets */; };
 		2377B97A1ED6DF0C003A7A49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2377B9781ED6DF0C003A7A49 /* LaunchScreen.storyboard */; };
+		2377B9841ED6DF44003A7A49 /* YJSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2377B9831ED6DF44003A7A49 /* YJSelectionView.m */; };
+		23A166841ED7C78900B02410 /* yj_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 23A166831ED7C78900B02410 /* yj_selected.png */; };
+		23A166861ED7D0D200B02410 /* yj_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 23A166851ED7D0D200B02410 /* yj_normal.png */; };
+		23A166891ED9166200B02410 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A166881ED9166200B02410 /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		2377B9761ED6DF0C003A7A49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2377B9791ED6DF0C003A7A49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2377B97B1ED6DF0C003A7A49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2377B9821ED6DF44003A7A49 /* YJSelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJSelectionView.h; sourceTree = "<group>"; };
+		2377B9831ED6DF44003A7A49 /* YJSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJSelectionView.m; sourceTree = "<group>"; };
+		23A166831ED7C78900B02410 /* yj_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yj_selected.png; sourceTree = "<group>"; };
+		23A166851ED7D0D200B02410 /* yj_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yj_normal.png; sourceTree = "<group>"; };
+		23A166871ED9166200B02410 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		23A166881ED9166200B02410 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +68,13 @@
 		2377B9691ED6DF0C003A7A49 /* YJSelectionView */ = {
 			isa = PBXGroup;
 			children = (
+				2377B9811ED6DF27003A7A49 /* YJSelectionView */,
 				2377B96D1ED6DF0C003A7A49 /* AppDelegate.h */,
 				2377B96E1ED6DF0C003A7A49 /* AppDelegate.m */,
 				2377B9701ED6DF0C003A7A49 /* ViewController.h */,
 				2377B9711ED6DF0C003A7A49 /* ViewController.m */,
+				23A166871ED9166200B02410 /* ViewController2.h */,
+				23A166881ED9166200B02410 /* ViewController2.m */,
 				2377B9731ED6DF0C003A7A49 /* Main.storyboard */,
 				2377B9761ED6DF0C003A7A49 /* Assets.xcassets */,
 				2377B9781ED6DF0C003A7A49 /* LaunchScreen.storyboard */,
@@ -77,6 +90,17 @@
 				2377B96B1ED6DF0C003A7A49 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2377B9811ED6DF27003A7A49 /* YJSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				23A166851ED7D0D200B02410 /* yj_normal.png */,
+				23A166831ED7C78900B02410 /* yj_selected.png */,
+				2377B9821ED6DF44003A7A49 /* YJSelectionView.h */,
+				2377B9831ED6DF44003A7A49 /* YJSelectionView.m */,
+			);
+			path = YJSelectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +161,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A166861ED7D0D200B02410 /* yj_normal.png in Resources */,
 				2377B97A1ED6DF0C003A7A49 /* LaunchScreen.storyboard in Resources */,
 				2377B9771ED6DF0C003A7A49 /* Assets.xcassets in Resources */,
+				23A166841ED7C78900B02410 /* yj_selected.png in Resources */,
 				2377B9751ED6DF0C003A7A49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2377B9841ED6DF44003A7A49 /* YJSelectionView.m in Sources */,
 				2377B9721ED6DF0C003A7A49 /* ViewController.m in Sources */,
+				23A166891ED9166200B02410 /* ViewController2.m in Sources */,
 				2377B96F1ED6DF0C003A7A49 /* AppDelegate.m in Sources */,
 				2377B96C1ED6DF0C003A7A49 /* main.m in Sources */,
 			);
@@ -311,6 +339,7 @@
 				2377B9801ED6DF0C003A7A49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
